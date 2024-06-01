@@ -3,14 +3,15 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif 
 
 }
 
 :root {
-    --cor1: rgb(33, 151, 68);
+    --cor1: rgb(226, 225, 220);
     --cor2: rgb(0, 168, 104);
-    --cor3: rgb(50, 124, 46);
+    --cor3: rgb(33, 151, 68);
+    --cor4: rgb(50, 124, 46);
 }
 
 /* MENU */
@@ -18,11 +19,6 @@
 section#menu {
     height: 120px;
     position: relative;
-}
-
-div#img-menu {
-    position: absolute;
-    left: 10px;
 }
 
 div#botao-menu {
@@ -33,7 +29,10 @@ div#botao-menu {
 }
 
 #logo {
-    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 250px;
 }
 
 #botao {
@@ -41,7 +40,7 @@ div#botao-menu {
     height: 30px;
     box-shadow: 2px 2px 2px black;
     color: white;
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -50,10 +49,10 @@ div#botao-menu {
 
 /* PRIMEIRA BLOCO (QUEM SOMOS) */ 
 
-section#container-bloco1 {
+section#bloco1 {
     height: 500px;
     position: relative;
-    background-color: var(--cor1);
+    background-color: var(--cor3);
 }
 
 div#item1 {
@@ -80,14 +79,33 @@ div#item1 {
 
 }
 
-.h2-branco {
-    margin: 10px;
-    font-size: 28px;
+h2 {
+    padding: 5px;
+    font-size: 30px;
 }
 
-.p {
-    margin: 10px;
+p {
+    padding: 5px;
     font-size: 18px;
+}
+
+.h2-verde {
+    color: var(--cor3);
+}
+
+ul {
+    padding: 2px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+li {
+    padding: 5px;
+}
+
+h3 {
+    padding: 5px;
+    font-size: 24px;
 }
 
 #botao-saibamais {
@@ -97,7 +115,7 @@ div#item1 {
     border-radius: 8px;
     box-shadow: 2px 2px 2px black;
     color: white;
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     font-size: 20px;
     font-weight: bold;
 }
@@ -107,6 +125,263 @@ div#item1 {
     border-radius: 15px;
 }
 
-section#container-bloco2 {
-    height: 500px;
+/* Segundo bloco (Nossos serviços) */
+
+section#bloco2 {
+    height: 610px;
+    position: relative;
+    background-color: var(--cor3);
 }
+
+
+div#item2 {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+
+#img-produto {
+    position: absolute;
+    top: 345px;
+    left: 750px;
+    transform: translate(-50%, -50%);
+}
+
+#img-bloco2 {
+    width: 1200px;
+}
+
+/* Terceiro bloco (Aprendiz Stone)*/
+
+section#bloco3 {
+    height: 500px;
+    position: relative;
+}
+
+div#item3 {
+    width: 700px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+#foto1-b3 {
+    position: absolute;
+    right: 350px;
+    bottom: 60px;
+}
+
+#foto2-b3 {
+    position: absolute;
+    top: 70px;
+    right: 350px;
+}
+
+#foto3-b3 {
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
+
+
+.img-bloco3 {
+   width: 310px;
+   border-radius: 15px;
+
+}
+
+/* Quarto bloco  */
+
+section#bloco4 {
+    height: 400px;
+    position: relative;
+    color: white;
+    background-color: var(--cor3);
+}
+
+div#item4 {
+    position: absolute;
+    top: 90px;
+    right: 150px;
+}
+
+#foto1-b4 {
+    position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+#quadrado1-b4 {
+    position: absolute;
+    width: 240px;
+    height: 250px;
+    top: 20px;
+    left: 100px;
+    border-radius: 15px;
+    background-color: var(--cor4);
+    box-shadow: 2px 2px 4px black;
+}
+
+#quadrado2-b4 {
+    position: absolute;
+    width: 710px;
+    height: 100px;
+    bottom: 20px;
+    left: 100px;
+    border-radius: 15px;
+    background-color: var(--cor4);
+    box-shadow: 2px 2px 4px black;
+}
+ 
+#img-bloco4 {
+    width: 450px;
+    border-radius: 15px;
+}
+
+/* Quinto bloco */
+
+section#bloco5 {
+    height: 400px;
+    position: relative;
+}
+
+div#item5 {
+    width: 700px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+#img-bloco5 {
+    width: 700px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    border-radius: 15px;
+}
+
+/* Sexto bloco */
+
+section#bloco6 {
+    height: 550px;
+    position: relative;
+    background-color: var(--cor3);
+}
+
+div#caixa-remuneracao {
+    width: 750px;
+    height: 400px;
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    background-color: white;
+}
+
+div#item6 {
+    position: absolute;
+    top: 40px;
+    left: 210px;
+    color: var(--cor3);
+}
+
+div#item7 {
+    position: absolute;
+    top: 120px;
+    left: 15px;
+}
+
+div#item8 {
+    position: absolute;
+    top: 120px;
+    right: 15px;
+}
+
+#img-remuneracao {
+    width: 550px;
+    border-radius: 0 200px 200px 0;
+}
+
+/* Setimo bloco */
+
+section#bloco7 {
+    height: 550px;
+    position: relative;
+}
+
+div#item9 {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+div#dyana {
+    width: 700px;
+    height: 380px;
+    position: absolute;
+    top: 120px;
+    left: 65px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+    background-color: var(--cor3);
+}
+
+#img-dyana {
+    width: 200px;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    border-radius: 15px;
+}
+
+#texto-dyana {
+    position: absolute;
+    top: 30px;
+    left: 220px;
+}
+
+div#lucas {
+    width: 700px;
+    height: 380px;
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+    background-color: var(--cor3);
+}
+
+#img-lucas {
+    width: 200px;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    border-radius: 15px;
+}
+
+#texto-lucas {
+    width: 480px;
+    position: absolute;
+    top: 30px;
+    left: 220px;
+}
+
+/* Footer */
+
+footer {
+    height: 200px;
+    position: relative;
+    background-color: var(--cor3);
+    color: white;
+}
+
+footer > img {
+    position: absolute;
+    width: 200px;
+    color: white;
+}
+
